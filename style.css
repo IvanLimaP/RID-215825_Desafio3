@@ -49,7 +49,7 @@ h1 {
 }
 
 .task-input button {
-  background-color: #2563eb;
+  background-color: #1458eb;
   color: white;
   border: none;
   border-radius: 8px;
@@ -61,7 +61,7 @@ h1 {
 }
 
 .task-input button:hover {
-  background-color: #1d4ed8;
+  background-color: #1a46be;
 }
 
 
@@ -86,4 +86,58 @@ h1 {
   flex-direction: column;
   gap: 0.3rem;
 }
+
+.task h3 {
+  font-size: 1rem;
+  color: #111827;
+}
+
+.task p {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e4e4e4b6;
+  color: #374151;
+  padding: 0.2rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.task button {
+  background-color: #1458eb;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.task button:hover {
+  background-color: #1a46be;
+}
+
+.task.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.task.completed button {
+  background-color: #10b981;
+}
+
+
+footer {
+  margin-top: 1.5rem;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+
 
