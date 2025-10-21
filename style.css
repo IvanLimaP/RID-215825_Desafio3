@@ -1,19 +1,39 @@
 
 * {
+  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 
 body {
+  height: 80rem;
   background-color: #f9fafc;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+#container-thumb {
+  height: 40rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
-  min-height: 100vh;
+  background: #eeeeee;
+}
+
+.img-thumb{
+  height: 32rem;
+  width: 64rem;
 }
 
 .container {
@@ -141,3 +161,78 @@ footer {
 
 
 
+@media only screen and (min-width: 374px) and (max-width: 844px) {
+
+  #container-thumb {
+    height: 20rem;
+    width: 50%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eeeeee;
+}
+
+  .img-thumb{
+    height: 20rem;
+    width: auto;
+}
+
+  
+  .container {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+  .task-input {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+  .container > .task-input > #taskName {
+    width: 90%;
+}
+
+  .container > .task-input > #taskTag {
+    width: 90%;
+}
+
+  .container > .task-input > #addTaskBtn {
+    width: 90%;
+}
+
+  #taskList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+  .task {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+  .task.completed {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+
+
+}
