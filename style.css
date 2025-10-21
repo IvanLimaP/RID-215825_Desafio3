@@ -161,7 +161,7 @@ footer {
 
 
 
-@media only screen and (min-width: 374px) and (max-width: 844px) {
+@media only screen and (min-width: 375px) and (max-width: 844px) {
 
   #container-thumb {
     height: 20rem;
@@ -233,6 +233,16 @@ footer {
     text-decoration: line-through;
 }
 
+  .task.completed > button {
+    height: auto;
+    width: auto;
+    border-radius: 10rem;
+  }
+
+  .task button {
+    height: 2.5rem;
+    width: 100%;
+ }
 
 
 }
